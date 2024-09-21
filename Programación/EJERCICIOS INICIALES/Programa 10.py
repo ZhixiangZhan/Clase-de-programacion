@@ -6,8 +6,8 @@ var_resto=var1%var2
 
 print(var_cociente)
 print(var_resto)
-if(var_resto=0)
-print("par")
-if not(var_resto!=0)
-print("impar")
+if True:(var_resto=0)
+      print("par")
+if False:(var_resto!=0)
+      print("impar")
       
