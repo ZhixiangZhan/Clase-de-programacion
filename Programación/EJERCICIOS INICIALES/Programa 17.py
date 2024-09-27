@@ -7,5 +7,5 @@ if imc>25:
         print("si pesas ",kg,"kilos y mides",m,", tu IMC es: ","{:.2f}".format(imc),"Hay sobrepeso")
 if imc<25:
         print("si pesas ",kg,"kilos y mides",m,", tu IMC es: ","{:.2f}".format(imc))
-if imc=25:
+if imc==25:
         print("si pesas ",kg,"kilos y mides",m,", tu IMC es: ","{:.2f}".format(imc),"Hay sobrepeso")
