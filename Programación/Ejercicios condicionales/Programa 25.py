@@ -1,3 +1,4 @@
+#25. Repite el programa número 23 pero en esta ocasión utilizando operadores lógicos.
 var1=float(input("introduzca la nota: "))
 
    
