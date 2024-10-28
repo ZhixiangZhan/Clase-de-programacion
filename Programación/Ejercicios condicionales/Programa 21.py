@@ -1,3 +1,5 @@
+#21. Programa que calcula una ecuación de segundo grado. Controla que el valor de la raíz 
+cuadrada no de un valor negativo
 a=int(input("Introduzca el primer número: "))
 b=int(input("Introduzca el segundo número: "))
 c=int(input("Introduzca el tercer número: "))
