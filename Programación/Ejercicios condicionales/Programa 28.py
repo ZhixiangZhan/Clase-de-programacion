@@ -1,3 +1,4 @@
+#28. Mejora el programa anterior para controlar también la introducción de símbolos. Utiliza elif.
 var1=input("introduzca una letra: ")
 x=var1.islower()
 y=var1.isnumeric()
