@@ -1,3 +1,4 @@
+#27. Mejora el programa anterior para controlar que el valor introducido es una letra y en caso de introducir un número, aparezca un aviso por pantalla
 var1=input("introduzca una letra: ")
 x=var1.islower()
 y=var1.isnumeric()
