@@ -1,4 +1,6 @@
-var1="A qui�n madruga Dios ayuda"
+#32. Cómo solucionarías con ayuda de métodos String el problema del ejercicio anterior para 
+no distinguir entre mayúsculas y minúscula
+var1="A quién madruga Dios ayuda"
 print(var1)
 frase1=var1.lower()
 var2=input("Introduzca una palabra de la frase: ")
