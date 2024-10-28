@@ -1,4 +1,8 @@
-var1="A qui�n madruga Dios ayuda"
+#31. Asigna a una variable de texto la siguiente frase: A quién madruga Dios ayuda. 
+Comprueba si existen las siguientes palabras mostrando por pantalla la posición de su 
+índice.
+
+var1="A quién madruga Dios ayuda"
 print(var1)
 var2=input("Introduzca una palabra de la frase: ")
 var3=var1.index(var2)
