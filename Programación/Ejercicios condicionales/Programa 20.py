@@ -1,3 +1,4 @@
+#20. A partir del ejercicio anterior, forzar que el usuario solo pueda introducir por teclados números entre 0 y 10
 var1=int(input("introduzca el primer número: "))
 var2=int(input("introduzca el segundo número: "))
    
