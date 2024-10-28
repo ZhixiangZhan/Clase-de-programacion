@@ -1,3 +1,5 @@
+# Programa que introduzca dos números y devuelva cuál de los dos es mayor, menor o son iguales
+
 var1=int(input("introduzca el primer número"))
 var2=int(input("introduzca el segundo número"))
 
