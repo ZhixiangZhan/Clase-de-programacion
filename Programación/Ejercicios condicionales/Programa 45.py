@@ -4,7 +4,7 @@ vocales = ""
 consonantes = ""
 
 for letra in palabra:
-    if letra.lower() in "aeiouáéíóú":
+    if letra in "aeiouáéíóú":
         vocales += letra
     elif letra.isalpha():  
         consonantes += letra  
