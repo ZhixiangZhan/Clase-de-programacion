@@ -1,46 +1,53 @@
 import random
 var1=["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
 total_acumulado=0
-var3=0
-var4=""
-var2=input("Quiere jugar una partida de blackjack? si: s  no: n :")
-
+var2=0
+var3=""
+var4=input("Quiere jugar una partida de blackjack? si: s  no: n :")
+var5=0
 while total_acumulado<21:
     
-    if total_acumulado==21:
-        print("Has ganado")
-        
-        
-    if total_acumulado>21:
-        print("Has perdido")
-        
-    if var2=="s":
-        var3=random.randint(1,13)
-        var4=var1[var3-1]
-        if var4=="J" or  var4=="Q" or  var4=="K":
+    if var4=="s":
+        var2=random.randint(1,13)
+        var3=var1[var2-1]
+        print("Tu carta es: ",var3)
+           
+        if var3=="J" or  var3=="Q" or  var3=="K":
             total_acumulado+=10
-        if var4=="A":
+        if var3=="A":
             if total_acumulado<10:
                 total_acumulado+=11
             elif total_acumulado==10:
                 total_acumulado+=11
             elif total_acumulado>10:
-                    total_acumulado+=1
-        if var4!="A" and var4!="J" and var4!="Q" and var4!="K" :
-            total_acumulado+=int(var4)
-            
-     print("Tu carta es: ",var4)
-     print(f"El total acumulado es: {total_acumulado}")
-     var2=input("Quieres otra carta? si: s  no: n :")  
-     
-    
-    
-    if var2=="n":
+                total_acumulado+=1
+        if var3!="A" and var3!="J" and var3!="Q" and var3!="K" :
+            total_acumulado+=int(var3)
+                
+        print(f"El total acumulado es: {total_acumulado}")
+        if total_acumulado==21:
+            print("Has ganado")
+            var4="n"
+        if total_acumulado>21:
+            print("Has perdido")
+            total_acumulado=0
+            var4="n"
+            var5=1
+        if var5==0:
+            var4=input("Quieres otra carta? si: s  no: n :")  
+        if var5!=0:    
+            var4=input("Quiere jugar una partida de blackjack? si: s  no: n :")
+    if var4=="n":
    
         if total_acumulado<21 and total_acumulado>15:
-                print("Has sido un poco conservador")
+            total_acumulado=0
+            print("Has sido un poco conservador")
+            var4=input("Quiere jugar una partida de blackjack? si: s  no: n :")
         if total_acumulado<1 and total_acumulado>15:
-                print("Quizás tendrías que arriesgar un poco ¿no?")
+            total_acumulado=0    
+            print("Quizás tendrías que arriesgar un poco ¿no?")
+            var4=input("Quiere jugar una partida de blackjack? si: s  no: n :")
+
         
 
     
