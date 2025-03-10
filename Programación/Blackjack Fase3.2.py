@@ -6,10 +6,13 @@ var2=0
 var3=""
 var4=input("Quiere jugar una partida de blackjack? si: s  no: n :")
 var5=0
-var6=""
-while var4=="s"
+var6="s"
+while var4=="s":
     while total_acumulado<21:
-        if var6=="s"
+        if total_acumulado>21:
+            print("La banca ha ganado. Te has pasado de 21")
+            var4=input("Quiere jugar otra partida de blackjack? si: s  no: n :")
+        if var6=="s":
             var2=random.randint(1,13)
             var3=var1[var2-1]
             print("Tu carta es: ",var3)
@@ -31,6 +34,9 @@ while var4=="s"
             var6=input("Quieres otra carta? si: s  no: n :")  
           
         if var6=="n":
+            if total_acumulado1>21:
+                print("Usted ha ganado.La banca se ha pasado de 21")
+                var4=input("Quiere jugar otra partida de blackjack? si: s  no: n :")
             while total_acumulado1<21:
                 var2=random.randint(1,13)
                 var3=var1[var2-1]
@@ -52,4 +58,10 @@ while var4=="s"
                 input
         
    
-if total_acumulado
+   
+    if total_acumulado<21 and total_acumulado<total_acumulado1:
+        print("La banca ha ganado con un total acomulado de {total_acumulado1}")
+        var4=input("Quiere jugar otra partida de blackjack? si: s  no: n :")
+    if total_acumulado1<21 and total_acumulado>total_acumulado1:
+        print("Usted ha ganado con un total acomulado de {total_acumulado}")
+        var4=input("Quiere jugar otra partida de blackjack? si: s  no: n :")
